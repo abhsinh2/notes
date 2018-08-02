@@ -75,3 +75,65 @@ Delete file as it finds
 
 # Bash Script and Command Line Arguments
 
+Arguments passed to script.sh can be get as $1, $2
+
+```echo $1 world```
+
+Access script.sh from anywhere
+
+1. export PATH=$PATH:<PATH_TO_SCRIPT.SH> => Use below
+2. ```chmod u+x <PATH_TO_SCRIPT.SH>```
+   ```cp <PATH_TO_SCRIPT.SH> /usr/local/bin```
+   
+Get list of environment variables
+
+```$env```
+
+## Functions
+
+Define and call
+
+```
+greet() {
+  echo "hello"
+}
+
+greet
+```
+
+Pass arguments
+
+```
+greet() {
+  echo "$1 hello"
+}
+
+greet "world"
+```
+
+Call method and store to a variable
+
+```
+greet() {
+  echo "$1 hello"
+}
+
+greetings=$(greet "world")
+echo $greetings
+```
+
+Conditional Statements
+
+```
+if [[ $USER='root' ]]; then
+  echo 'root'
+elif [[ $USER='home' ]]; then
+  echo 'home'
+else
+  echo 'guest'
+fi
+
+```
+
+   
+
