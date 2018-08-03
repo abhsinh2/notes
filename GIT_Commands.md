@@ -17,6 +17,7 @@ git commit -m "intial commit"
 ```
   
 # Useful Commands
+
 git log
 
 git branch
@@ -24,6 +25,15 @@ git branch
 git pull --rebase
 
 git checkout feature/test1
+
+Create Branch Locally
+
+```git checkout -b <branch>```
+
+Push local branch to remote
+
+```git push -u origin <branch>```
+```git push --set-upstream origin <branch>```
 
 # Merge 
 
