@@ -33,6 +33,9 @@ Create Branch Locally
 Push local branch to remote
 
 ```git push -u origin <branch>```
+
+OR
+
 ```git push --set-upstream origin <branch>```
 
 # Merge 
